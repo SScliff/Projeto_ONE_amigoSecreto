@@ -119,10 +119,17 @@ button {
     background-color: var(--color-tertiary);
     color: var(--color-text);
     border-radius: 0 25px 25px 0;
+    transition: background-color 0.3s ease;
 }
 
 .button-add:hover {
     background-color: #a1a1a1;
+}
+
+.button-add.active {
+    background-color: #4caf53; /* Cor ativa (exemplo: verde) */
+    color: white;
+    cursor: pointer;
 }
 
 /* Listas */

@@ -31,7 +31,7 @@ function sortearAmigos() {
     if (listaDeAmigos.length === 0) {
         alert('A lista de amigos está vazia');
         return
-    } else if (listaDeAmigos.length != 3) {
+    } else if (listaDeAmigos.length <= 2) {
         alert('a lista deve conter mais um nome');
         return
     }

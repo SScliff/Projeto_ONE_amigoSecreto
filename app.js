@@ -31,14 +31,14 @@ function sortearAmigos() {
     if (listaDeAmigos.length === 0) {
         alert('A lista de amigos está vazia');
         return
-    } else if (listaDeAmigos.length <= 2) {
+    } else if (listaDeAmigos.length <= 1) {
         alert('a lista deve conter mais um nome');
         return
     }
     let numeroAleatorio = Math.floor(Math.random() * listaDeAmigos.length);
     let amigoSorteado = listaDeAmigos[numeroAleatorio];
     let resultado = document.getElementById('resultado');
-    resultado.innerHTML = `🎉 ${amigoSorteado} 🎉`;
+    resultado.innerHTML = `o amigo sorteado é : 🎉 ${amigoSorteado} 🎉`;
     listaDeAmigos.splice(numeroAleatorio, 1)
     atualizarlista()
     lançarConfetti()

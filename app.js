@@ -22,11 +22,8 @@ function addAmigos() {
 
     } else {
         listaDeAmigos.push(amigos);
-        let addAmigos = document.getElementById('listaAmigos');
-        addAmigos.innerHTML = listaDeAmigos.map((amigo) => `<li>${amigo}</li>`).join('');
-        limparCampo();
-        estadoDoBotao();
-
+        atualizarlista()
+        limparCampo()
     }
 }
 
@@ -43,9 +40,8 @@ function sortearAmigos() {
     let resultado = document.getElementById('resultado');
     resultado.innerHTML = `🎉 ${amigoSorteado} 🎉`;
     listaDeAmigos.splice(numeroAleatorio, 1)
-
+    atualizarlista()
     lançarConfetti()
-
 }
 
 function estadoDoBotao() {
@@ -66,9 +62,19 @@ function verificaCaracteresEspeciais(str) {
 
 function lançarConfetti() {
     confetti({
-        particleCount: 500, // Quantidade de confetes
-        spread: 160,        // Ângulo de dispersão
-        origin: { x: 0.5, y: 0.5 } // Centro da tela
+        particleCount: 500, 
+        spread: 160,        
+        origin: { x: 0.5, y: 0.5 } 
     });
 }
 
+function atualizarlista(){
+    let lista = document.getElementById('listaAmigos')
+    lista.innerHTML = '';
+
+    for(let i = 0; i < listaDeAmigos.length; i++){
+        let item = document.createElement('li')
+        item.textContent = listaDeAmigos[i];
+        lista.appendChild(item)
+    }
+}

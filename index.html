@@ -11,6 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
     <title>Amigo Secreto</title>
+  
 </head>
 
 <body>
@@ -21,10 +22,10 @@
         </header>
 
         <section class="input-section">
-            <h2 class="section-title">Digite o nome dos seus amigos</h2>
+            <h2 id= tituloPrincipal class="section-title">Digite o nome dos seus amigos</h2>
             <div class="input-wrapper">
                 <input type="text" id="amigo" class="input-name" placeholder="Digite um nome">
-                <button class="button-add" onclick="addAmigos()">Adicionar</button>
+                <button class="button-add" onclick="addAmigos()" id="sortear">Adicionar</button>
             </div>
 
             <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list">
@@ -34,7 +35,7 @@
             <ul id="resultado" class="result-list" aria-live="polite"></ul>
 
             <div class="button-container">
-                <button class="button-draw" onclick="sortearAmigos()" aria-label="Sortear amigo secreto">
+                <button class="button-draw" onclick="sortearAmigos()" id="sortear" aria-label="Sortear amigo secreto">
                     <img src="assets/play_circle_outline.png" alt="Ícone para sortear">
                     Sortear amigo
                 </button>
@@ -43,6 +44,7 @@
     </main>
 
     <script src="app.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </body>
 
 </html>

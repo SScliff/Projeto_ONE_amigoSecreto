@@ -127,7 +127,7 @@ button {
 }
 
 .button-add.active {
-    background-color: #4caf53; /* Cor ativa (exemplo: verde) */
+    background-color: #4caf53; 
     color: white;
     cursor: pointer;
 }

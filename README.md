@@ -44,7 +44,7 @@ Este é um projeto simples desenvolvido com JavaScript, HTML e CSS que permite c
 - **sorteador-de-amigos/**
   - `index.html`: Estrutura principal da página (arquivo HTML).
   - `style.css`: Arquivo de estilo para a aparência da aplicação.
-  - `script.js`: Arquivo JavaScript com a lógica do sorteador de amigos.
+  - `app.js`: Arquivo JavaScript com a lógica do sorteador de amigos.
   - `confetti.min.js`: Arquivo da biblioteca para animação de confetes.
 
 ---
@@ -69,12 +69,4 @@ Este é um projeto simples desenvolvido com JavaScript, HTML e CSS que permite c
 
 ---
 
-## Contribuição
 
-Sinta-se à vontade para contribuir com melhorias, correções ou novas funcionalidades. 
-
----
-
-## Licença
-
-Este projeto é de uso livre. Modifique, use e compartilhe como preferir!

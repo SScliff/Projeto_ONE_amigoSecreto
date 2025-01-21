@@ -40,11 +40,12 @@ Este é um projeto simples desenvolvido com JavaScript, HTML e CSS que permite c
 
 ## Estrutura do Projeto
 
-sorteador-de-amigos/
-├── index.html       # Estrutura principal da página (arquivo HTML)
-├── style.css        # Arquivo de estilo para a aparência da aplicação
-├── script.js        # Arquivo JavaScript com a lógica do sorteador de amigos
-└── confetti.min.js  # Arquivo da biblioteca para animação de confetes
+
+- **sorteador-de-amigos/**
+  - `index.html`: Estrutura principal da página (arquivo HTML).
+  - `style.css`: Arquivo de estilo para a aparência da aplicação.
+  - `script.js`: Arquivo JavaScript com a lógica do sorteador de amigos.
+  - `confetti.min.js`: Arquivo da biblioteca para animação de confetes.
 
 ---
 
